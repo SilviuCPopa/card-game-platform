@@ -1,0 +1,5 @@
+<div [ngClass]="'player-hand- ' + type">
+  <div class="player-hand-cards">
+    <img *ngFor="let card of hand?.cards" class="card" [src]="getCardImagePath(card)">
+  </div>
+</div>

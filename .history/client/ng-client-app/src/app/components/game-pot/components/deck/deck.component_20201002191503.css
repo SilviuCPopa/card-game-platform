@@ -1,0 +1,13 @@
+.deck-container {
+  position: relative;
+  width: 70px;
+  height: 110px;
+  border: 2px solid;
+  margin: 50px;
+  float: right;
+}
+
+.deck-container .card {
+  position: absolute;
+  bottom: 2px;
+}

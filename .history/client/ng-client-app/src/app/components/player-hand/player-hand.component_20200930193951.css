@@ -1,0 +1,11 @@
+.player-hand {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.player-hand-cards {
+  position: absolute;
+  width: 400px;
+  margin: 0 auto;
+}
