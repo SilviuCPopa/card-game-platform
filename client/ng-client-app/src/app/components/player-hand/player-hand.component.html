@@ -1,0 +1,14 @@
+<div [ngClass]="'player-hand-' + type">
+  <div class="player-hand-cards">
+    <div *ngIf="isPlayer() else opponentHand">
+      <img *ngFor="let card of (hand$ | async)?.cards"
+         class="card"
+         (click)="playCard(card)"
+         [src]="getCardImagePath(card)">
+    </div>
+
+    <ng-template #opponentHand>
+      <img *ngFor="let card of defaultCards" class="card" [src]="'/assets/cards/b1fv.png'">
+    </ng-template>
+  </div>
+</div>
